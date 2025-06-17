@@ -35,6 +35,7 @@ Warka Backend handles screenshot generation, financial data, weather information
    pip install -r requirements.txt
    ```
 2. Download the chromedriver binary from https://googlechromelabs.github.io/chrome-for-testing/.
+
  Unzip and make sure to place the binary `chromdriver` under the `chromedriver` folder (Running `./chromedriver/chromdriver --version` should print the version). chromedriver is used in the headless browser to take the screenshot of the Warka frontend page.
 3. Run the server:
    ```sh
