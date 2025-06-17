@@ -1,0 +1,7 @@
+numpy>=1.24.0
+Pillow>=10.0.0
+selenium==4.30.0
+yfinance==0.2.58
+flask
+requests
+flask-cors
