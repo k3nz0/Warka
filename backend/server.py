@@ -202,6 +202,7 @@ def get_holdings():
     wpea_price = yf.Ticker("WPEA.PA").history(period='1d')['Close'].iloc[-1]
     ddog_price = yf.Ticker("DDOG").history(period='1d')['Close'].iloc[-1]
 
+    # Update this to reflect your own holdings
     cw8 = 10 * cw8_price
     wpea = 10 * wpea_price
     ddog = 10 * ddog_price * usd_eur_rate
