@@ -16,18 +16,6 @@ Warka Backend handles screenshot generation, financial data, weather information
 - **Image Serving**: Serves BMP image data in chunks suitable for ESP32 transmission
 - **Configuration Management**: Serves ESP32 configuration from JSON (`config.json`)
 
-## Requirements
-
-- Python 3.x
-- `PIL` (Pillow) library
-- `numpy`
-- `flask` and `flask-cors`
-- `selenium` (for automated screenshot capture)
-- `yfinance` (for stock market data)
-- `requests` (for API calls)
-- chromedriver (for screenshot generation)
-- OpenWeather API key (set as `OPENWEATHER_API_KEY` environment variable)
-
 ## Installation
 
 1. Install dependencies:
@@ -36,7 +24,7 @@ Warka Backend handles screenshot generation, financial data, weather information
    ```
 2. Download the chromedriver binary from https://googlechromelabs.github.io/chrome-for-testing/.
 
- Unzip and make sure to place the binary `chromdriver` under the `chromedriver` folder (Running `./chromedriver/chromdriver --version` should print the version). chromedriver is used in the headless browser to take the screenshot of the Warka frontend page.
+ Unzip and make sure to place the binary `chromedriver` under the `chromedriver` folder (Running `./chromedriver/chromedriver --version` should print the version). chromedriver is used in the headless browser to take the screenshot of the Warka frontend page.
 
 3. Run the server:
    ```sh
