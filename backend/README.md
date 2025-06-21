@@ -5,7 +5,7 @@ This backend serves various endpoints for a dashboard application displayed on a
 
 Warka Backend handles screenshot generation, financial data, weather information, news feeds, and more.
 
-![architecture.jpeg](architecture.jpeg)
+![architecture.jpeg](../pictures/architecture.jpeg)
 
 ## Features
 

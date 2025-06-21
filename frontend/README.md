@@ -8,7 +8,7 @@ Warka Frontend gives you the tools you need.
 For the demo, we've built a sleek React dashboard that transforms your data into beautiful visualizations optimized for e-ink displays.
 Track your investments, monitor weather, stay updated with news, and more - all in one elegant interface.
 
-![WarkaDashboard](warka_frontend.jpg)
+![WarkaDashboard](../pictures/warka_frontend.jpg)
 
 ## ✨ What Makes It Special
 
