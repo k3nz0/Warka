@@ -27,28 +27,6 @@ The design burden is now on the frontend (React) side. You can implement a dashb
 - 🔌 **ESP32 Integration**: Chunked data transfer for microcontroller memory constraints
 - ⚡ **Real-time Data**: Live updates via Yahoo Finance and OpenWeatherMap APIs
 
-## Hardware
-The hardware is very simple. You need:
-- ESP32: I used [this one](https://fr.aliexpress.com/item/1005005704190069.html?spm=a2g0o.order_list.order_list_main.10.56ee5e5bnYfjPc&gatewayAdapt=glo2fra)
-- E-INK display: I used the [GooDisplay 7.5 inch](https://fr.aliexpress.com/item/1005002870223620.html?spm=a2g0o.order_list.order_list_main.15.56ee5e5bvOrIsx&gatewayAdapt=glo2fra)
-- E-INK adapter: I used the [GooDisplay adapter](https://fr.aliexpress.com/item/1005004633084221.html?spm=a2g0o.order_list.order_list_main.14.56ee5e5bvOrIsx&gatewayAdapt=glo2fra)
-- power supply: I used my laptop as a power supply but you can also use a power bank or a 5V power supply
-- a few jumper wires to connect the ESP32 to the E-INK display
-
-### Wiring
-
-Here is how to wire the ESP32 to the E-INK display:
-
-| ESP32 Pin     | E-INK Pin |
-|---------------|-----------|
-| GND           | GND       |
-| 3.3V          | 3.3V (VCC)|
-| GPIO D4       | Busy      |
-| GPIO D16      | RES       |
-| GPIO D17      | D/C       |
-| GPIO D5       | CS        |
-| GPIO D18      | SCK       |
-| GPIO D23      | SDI       |
 
 
 ## 🚀 Quick Start
@@ -88,11 +66,35 @@ Here is how to wire the ESP32 to the E-INK display:
    ```
    Frontend runs on `http://localhost:5173`
 
+3. **Flash the code into the ESP32:**
+
+## Hardware
+The hardware is very simple. You need:
+- ESP32: I used [this one](https://fr.aliexpress.com/item/1005005704190069.html?spm=a2g0o.order_list.order_list_main.10.56ee5e5bnYfjPc&gatewayAdapt=glo2fra)
+- E-INK display: I used the [GooDisplay 7.5 inch](https://fr.aliexpress.com/item/1005002870223620.html?spm=a2g0o.order_list.order_list_main.15.56ee5e5bvOrIsx&gatewayAdapt=glo2fra)
+- E-INK adapter: I used the [GooDisplay adapter](https://fr.aliexpress.com/item/1005004633084221.html?spm=a2g0o.order_list.order_list_main.14.56ee5e5bvOrIsx&gatewayAdapt=glo2fra)
+- power supply: I used my laptop as a power supply but you can also use a power bank or a 5V power supply
+- a few jumper wires to connect the ESP32 to the E-INK display
+
+### Wiring
+
+Here is how to wire the ESP32 to the E-INK display:
+
+| ESP32 Pin     | E-INK Pin |
+|---------------|-----------|
+| GND           | GND       |
+| 3.3V          | 3.3V (VCC)|
+| GPIO D4       | Busy      |
+| GPIO D16      | RES       |
+| GPIO D17      | D/C       |
+| GPIO D5       | CS        |
+| GPIO D18      | SCK       |
+| GPIO D23      | SDI       |
 
 ### Demo
 This is the main dashboard of Warka. It displays the date, the weather forecast, the stock market, the current top hacker news posts and an overview of my portfolio.
 
-![Warka](/assets/images/warka/examples/warka2.jpg)
+![Warka](pictures/warka2.jpg)
 
 But you can also easily display any image.
 
@@ -105,10 +107,6 @@ But you can also easily display any image.
 
 ![SidiBou](pictures/sidibou.jpg)
 <center><em>Tunis - Sidi Bou Said</em></center>
-
-### Warka - Daft Punk refresh
-<iframe width="480" height="800" src="http://www.youtube.com/embed/aL0Z7EtoWpk" frameborder="0"> </iframe>
-
 
 ## 🔌 ESP32 Integration
 
