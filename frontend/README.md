@@ -1,4 +1,4 @@
-# 🚀 Warka Dashboard Frontend
+# 🚀 Warka -- Frontend
 
 > **Your Personal Command Center for E-ink Displays**
 
@@ -13,8 +13,11 @@ Track your investments, monitor weather, stay updated with news, and more - all 
 ## ✨ What Makes It Special
 
 🎯 **E-ink Optimized** - Crisp, high-contrast design perfect for low-power displays
+
 📈 **Real-time Finance** - Live stock prices, portfolio tracking
+
 🌤️ **Smart Weather** - multi-day forecasts with beautiful data visualization
+
 📰 **Curated News** - Top stories from Hacker News at your fingertips
 
 ## 🚀 Quick Start
