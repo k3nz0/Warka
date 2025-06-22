@@ -106,14 +106,14 @@ But you can also easily display any image.
 
 ### Warka - Screensavers
 <p align="center">
-![Paris](pictures/paris.jpg)
-<i align="center">Paris</i>
+<img src="pictures/paris.jpg")
+<i>Paris</i>
 
-![DaftPunk](pictures/daftpunk.jpg)
-<i align="center">Daft Punk</i>
+<img src="pictures/daftpunk.jpg">
+<i>Daft Punk</i>
 
-![SidiBou](pictures/sidibou.jpg)
-<i align="center">Tunis - Sidi Bou Said</i>
+<img src="pictures/sidibou.jpg">
+<i>Tunis - Sidi Bou Said</i>
 </p>
 
 ## 🔌 ESP32 Integration
