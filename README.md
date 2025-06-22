@@ -1,5 +1,7 @@
 # Warka -- Your React e-ink Display
 
+Warka is a framework for building e-ink displays using React as a frontend and Python as a backend. The ESP32 is used to fetch a screenshot file from the backend server and display it in the e-ink display.
+
 Warka has 3 components:
 
 1. Frontend that is displayed in the e-ink paper, coded in React
@@ -31,23 +33,20 @@ The design burden is now on the frontend (React) side. You can implement a dashb
 
 ## 🚀 Quick Start
 
-### Install and run
-
-1. **Set up the backend:**
-  -  **Download ChromeDriver:**
+### Backend
+-  **Download ChromeDriver:**
     - Visit [Chrome for Testing]  (https://googlechromelabs.github.io/chrome-for-testing/)
     - Download ChromeDriver for your system
     - Extract to `backend/chromedriver/chromedriver`
     - Verify: `./backend/chromedriver/chromedriver --version`
-  - **Backend Configuration:**
+- **Backend Configuration:**
     - Edit `warka/backend/config.py`:
 
     ```python
-    FRONTEND_URL = "http://localhost:5173"
     OPENWEATHER_API_KEY = "your_openweather_api_key_here"
     ```
 
-  - **Install dependencies:**
+- **Install dependencies:**
    ```bash
    cd backend
    python -m venv venv
@@ -57,8 +56,8 @@ The design burden is now on the frontend (React) side. You can implement a dashb
    ```
    Backend runs on `http://localhost:8000`
 
-
-2. **Set up the frontend:**
+### Frontend
+- **Set up the frontend:**
    ```bash
    cd frontend
    npm install
@@ -66,7 +65,8 @@ The design burden is now on the frontend (React) side. You can implement a dashb
    ```
    Frontend runs on `http://localhost:5173`
 
-3. **Flash the code into the ESP32:**
+## ESP32
+**Flash the code into the ESP32:**
 
 ## Hardware
 The hardware is very simple. You need:
@@ -100,13 +100,13 @@ But you can also easily display any image.
 
 ### Warka - Screensavers
 ![Paris](pictures/paris.jpg)
-<center><em>Paris</em></center>
+<em>Paris</em>
 
 ![DaftPunk](pictures/daftpunk.jpg)
-<center><em>Daft Punk</em></center>
+<em>Daft Punk</em>
 
 ![SidiBou](pictures/sidibou.jpg)
-<center><em>Tunis - Sidi Bou Said</em></center>
+<em>Tunis - Sidi Bou Said</em>
 
 ## 🔌 ESP32 Integration
 
