@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="pictures/logo.png">
+    <img src="pictures/logo.png" width="200" height="200">
     <br />
     <br />
     <i>Your React e-ink Display</i>
