@@ -1,4 +1,13 @@
+<p align="center">
+    <img src="pictures/logo.png">
+    <br />
+    <br />
+    <i>Your React e-ink Display</i>
+</p>
+<hr />
+
 # Warka -- Your React e-ink Display
+
 
 Warka is a framework for building e-ink displays using React as a frontend and Python as a backend. The ESP32 is used to fetch a screenshot file from the backend server and display it in the e-ink display.
 
@@ -92,7 +101,7 @@ Here is how to wire the ESP32 to the E-INK display:
 | GPIO D23      | SDI       |
 
 ### Demo
-This is the main dashboard of Warka. It displays the date, the weather forecast, the stock market, the current top hacker news posts and an overview of my portfolio.
+This is the main dashboard of Warka. It displays the date, the weather forecast, the stock market, the current top hacker news posts and an overview of your portfolio.
 
 ![Warka](pictures/warka2.jpg)
 
