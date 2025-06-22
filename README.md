@@ -6,7 +6,9 @@
 </p>
 <hr />
 
-Warka is a framework for building e-ink displays using React as a frontend and Python as a backend. The ESP32 is used to fetch a screenshot file from the backend server and display it in the e-ink display.
+Warka is a framework for building e-ink displays using React as a frontend and Python as a backend.
+
+An ESP32, running a ~100 C++ lines lightweight software, is used to fetch a screenshot file from the backend server and display it in the e-ink display.
 
 Warka has 3 components:
 
