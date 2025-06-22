@@ -46,7 +46,7 @@ The design burden is now on the frontend (React) side. You can implement a dashb
     - Extract to `backend/chromedriver/chromedriver`
     - Verify: `./backend/chromedriver/chromedriver --version`
 - **Backend Configuration:**
-    - Edit `warka/backend/config.py`:
+    - Edit `backend/config.py`:
 
     ```python
     OPENWEATHER_API_KEY = "your_openweather_api_key_here"
@@ -72,7 +72,16 @@ The design burden is now on the frontend (React) side. You can implement a dashb
    Frontend runs on `http://localhost:5173`
 
 ## ESP32
-**Flash the code into the ESP32:**
+- Edit `esp32/src/config.h`
+```c++
+// WiFi Configuration
+#define WIFI_SSID "<YOUR_WIFI_SSID>"
+#define WIFI_PASSWORD "<YOUR_WIFI_PASSWORD>"
+
+// Server Configuration
+#define BASE_URL "http://192.168.1.79:8000/" // change this with your backend server address
+```
+- Flash the code into your ESP32
 
 ## Hardware
 The hardware is very simple. You need:
