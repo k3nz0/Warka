@@ -106,7 +106,7 @@ But you can also easily display any image.
 
 ### Warka - Screensavers
 <p align="center">
-<img src="pictures/paris.jpg")
+<img src="pictures/paris.jpg">
 <i>Paris</i>
 
 <img src="pictures/daftpunk.jpg">
