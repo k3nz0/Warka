@@ -105,6 +105,7 @@ This is the main dashboard of Warka. It displays the date, the weather forecast,
 But you can also easily display any image.
 
 ### Warka - Screensavers
+<p align="center">
 ![Paris](pictures/paris.jpg)
 <i align="center">Paris</i>
 
@@ -113,6 +114,7 @@ But you can also easily display any image.
 
 ![SidiBou](pictures/sidibou.jpg)
 <i align="center">Tunis - Sidi Bou Said</i>
+</p>
 
 ## 🔌 ESP32 Integration
 
