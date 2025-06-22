@@ -6,9 +6,6 @@
 </p>
 <hr />
 
-# Warka -- Your React e-ink Display
-
-
 Warka is a framework for building e-ink displays using React as a frontend and Python as a backend. The ESP32 is used to fetch a screenshot file from the backend server and display it in the e-ink display.
 
 Warka has 3 components:
@@ -44,7 +41,7 @@ The design burden is now on the frontend (React) side. You can implement a dashb
 
 ### Backend
 -  **Download ChromeDriver:**
-    - Visit [Chrome for Testing]  (https://googlechromelabs.github.io/chrome-for-testing/)
+    - Visit [Chrome for Testing](https://googlechromelabs.github.io/chrome-for-testing/)
     - Download ChromeDriver for your system
     - Extract to `backend/chromedriver/chromedriver`
     - Verify: `./backend/chromedriver/chromedriver --version`
