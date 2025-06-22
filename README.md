@@ -106,7 +106,7 @@ But you can also easily display any image.
 
 ### Warka - Screensavers
 ![Paris](pictures/paris.jpg)
-<em>Paris</em>
+<i>Paris</i>
 
 ![DaftPunk](pictures/daftpunk.jpg)
 <em>Daft Punk</em>
