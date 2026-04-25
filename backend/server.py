@@ -47,26 +47,34 @@ def get_top_hn_posts():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+COUNTER = 0
+
 @app.route('/image')
 def image_handler():
+    # one in 2 call the screenshot endpoint
+    global COUNTER
+    if COUNTER % 2 == 0:
+        screenshot_handler()
+    COUNTER += 1
+
     offset = int(request.args.get("offset", 0))
     limit = int(request.args.get("limit", 0))
 
-    image = Image.open(BMP_FILE)
-    data = np.array(image, dtype=np.uint8)
-    flattened_data = data.flatten()
+    try:
+        image = Image.open(BMP_FILE)
+        data = np.array(image, dtype=np.uint8)
+        flattened_data = data.flatten()
 
-    mxLen = min(offset + limit, len(flattened_data))
-    flattened_data = flattened_data[offset:mxLen]
-    s = ""
-    for c in flattened_data:
-        s += str(c)
+        mxLen = min(offset + limit, len(flattened_data))
+        flattened_data = flattened_data[offset:mxLen]
+        s = ""
+        for c in flattened_data:
+            s += str(c)
+        return s, 200, {'Content-Type': 'text/plain', 'Content-Length': str(len(s))}
+    except:
+        print("Unable to read {}".format(BMP_FILE))
+        return "", 500, {'Content-Type': 'text/plain', 'Content-Length': 0}
 
-    # one in 3 call the screenshot endpoint
-    r = np.random.randint(0, 3)
-    if r % 2 == 0:
-        screenshot_handler()
-    return s, 200, {'Content-Type': 'text/plain', 'Content-Length': str(len(s))}
 
 @app.route('/screenshot')
 def screenshot_handler():
@@ -89,7 +97,7 @@ def screenshot_handler():
         width = browser.execute_script("return window.innerWidth")
         height = browser.execute_script("return window.innerHeight")
         print(f"Viewport size: {width} x {height}")
-        time.sleep(5)  # Wait for the page to load
+        time.sleep(3)  # Wait for the page to load
         png = browser.save_screenshot("screenshot.png")
         image = Image.open("screenshot.png")
         image = image.convert('1', dither=Image.NONE)
