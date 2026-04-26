@@ -94,7 +94,7 @@ void setup()
 void displayImage(int offset, int limit)
 {
   // display image
-  display.setFullWindow();
+  display.setPartialWindow(0, 0, display.width(), display.height());
   display.firstPage();
 
   char url[100];
@@ -115,9 +115,6 @@ void displayImage(int offset, int limit)
     // given that we can't store the whole bitmap in memory, we need to split it into two iterations
     for (int iteration = 0; iteration < 2; iteration++)
     {
-      for (int i = 0; i < BITMAP_SIZE / 2; i++)
-        bmp[i] = 0;
-
       for (int i = 0; i < sz / 8 / 2; i++)
       {
         // read bytes from the stream but in practice it's 0s and 1s so every byte needs to be treated as one bit.
